@@ -199,7 +199,7 @@ a {
 
 .productos-container {
   display: grid;
-  grid-template: "header" 4.5rem "image" 6rem "texto" 14rem "main" 185rem "footer" auto;
+  grid-template: "header" 4.5rem "image" 6rem "texto" 14rem "main" 170rem "footer" auto;
 }
 
 .banner-image {
@@ -310,7 +310,7 @@ a {
 
 .nosotras-container {
   display: grid;
-  grid-template: "header" 4.5rem "nosotras" 40rem "taller" 40rem "feria1" 40rem "feria2" 40rem "footer" auto;
+  grid-template: "header" 4.5rem "nosotras" 40rem "taller" 40rem "feria1" 40rem "feria2" 50rem "footer" auto;
 }
 
 .nosotras-main {
