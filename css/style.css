@@ -1,515 +1,462 @@
 @font-face {
-    font-family: time_burner_bold;
-    src: url(../fonts/timeburnerbold.ttf);
+  font-family: time_burner_bold;
+  src: url(../fonts/timeburnerbold.ttf);
 }
-
 @font-face {
-    font-family: slthin;
-    src: url(../fonts/SlatePro-Light.ttf);
+  font-family: slthin;
+  src: url(../fonts/SlatePro-Light.ttf);
 }
-
 @font-face {
-    font-family: time_burner_nav;
-    src: url(../fonts/timeburner_regular.ttf);
+  font-family: time_burner_nav;
+  src: url(../fonts/timeburner_regular.ttf);
 }
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    min-height: 100%;
-    background: rgb(232, 217, 250);
-    background: linear-gradient(180deg, rgb(240, 231, 252) 60%, rgba(181, 184, 254, 1) 100%);
-    background-attachment: fixed;
+  min-height: 100%;
+  background: rgb(232, 217, 250);
+  background: linear-gradient(180deg, rgb(240, 231, 252) 60%, rgb(181, 184, 254) 100%);
+  background-attachment: fixed;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #header {
-    grid-area: header;
-    background-color: rgba(232, 217, 250);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, .9);
-    width: 100%;
-    height: 3.1rem;
-    position: fixed;
-    z-index: 2;
+  grid-area: header;
+  background-color: rgb(232, 217, 250);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 3.1rem;
+  position: fixed;
+  z-index: 2;
 }
 
 .logo-container {
-    display: flex;
-    height: 2.9rem;
-    padding-left: 4rem;
+  display: flex;
+  height: 2.9rem;
+  padding-left: 1rem;
 }
-
 .logo-container img {
-    width: 90%;
-    top: 0;
-    display: block;
+  width: 90%;
+  top: 0;
+  display: block;
 }
-
 .logo-container p {
-    color: #432F61;
-    font-family: time_burner_bold;
-    font-size: .8rem;
-    text-align: center;
+  color: #432F61;
+  font-family: time_burner_bold;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .nav-bar {
-    width: 100%;
-    height: 3.5rem;
-    padding: 4px 0;
+  width: 100%;
+  height: 3.5rem;
+  padding: 4px 0;
 }
 
 .container-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-brand {
-    padding: 2px 0 0 2px;
+  padding: 2px 0 0 2px;
 }
 
 .navbar-toggler {
-    border: none;
-    color: #7F38DE;
-    font-size: 1.5rem;
-    margin: 0 4rem .5rem;
+  border: none;
+  color: #7F38DE;
+  font-size: 1.5rem;
+  margin: 0 1rem 0.5rem;
 }
 
 .navbar-nav {
-    width: 100%;
-    height: 100vh;
-    background-color: #7F38DE;
-    font-family: time_burner_bold;
-    font-size: 1.2rem;
-    text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #7F38DE;
+  font-family: time_burner_bold;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .nav-item a {
-    color: #e8d9fa;
-    margin-top: 3rem;
-    transition: all .1s ease-in;
+  color: #e8d9fa;
+  margin-top: 3rem;
+  transition: all 0.1s ease-in;
 }
-
 .nav-item ul {
-    height: 80%;
+  height: 80%;
 }
 
 .nav-link:hover {
-    font-size: 1.3rem;
-    color: #000;
+  font-size: 1.3rem;
+  color: #000;
 }
 
 #footer {
-    grid-area: footer;
-    border-top: 1px solid gray;
+  grid-area: footer;
+  border-top: 1px solid gray;
 }
 
 .footer-icons {
-    display: inline-block;
-    margin-right: 25rem;
+  display: inline-block;
+  margin-right: 25rem;
 }
-
 .footer-icons a {
-    color: rgb(65, 65, 65);
+  color: rgb(65, 65, 65);
 }
 
 .index-container {
-    display: grid;
-    grid-template:
-        "header"4.5rem "carrusel"10rem "marketing"70rem "info" 41rem "footer"auto;   
+  display: grid;
+  grid-template: "header" 4.5rem "carrusel" 10rem "marketing" 70rem "info" 41rem "footer" auto;
 }
 
 .carousel {
-    grid-area: carrusel;
-    padding-top: 3.2rem;
+  grid-area: carrusel;
+  padding-top: 3.2rem;
 }
-    
+
 .carousel-item img {
-    filter: sepia(50%);
-    width: 100%;
+  filter: sepia(50%);
+  width: 100%;
 }
 
 .btn-carr {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .btn-car {
-    background-color: #7F38DE;
+  background-color: #7F38DE;
 }
 
 .carousel-caption em {
-    color: rgb(167, 167, 167);
+  color: rgb(167, 167, 167);
 }
-    
+
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-    background-color: rgb(128, 128, 128);
-    text-align: center;
-}   
+  background-color: rgb(128, 128, 128);
+  text-align: center;
+}
 
 .container-marketing {
-    grid-area: marketing;
+  grid-area: marketing;
 }
 
 .item-marketing {
-    text-align: center;
-    padding: 1rem 0 4rem 0;
+  text-align: center;
+  padding: 1rem 0 4rem 0;
 }
-
 .item-marketing img {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
-
 .item-marketing h2 {
-    padding-top: 1rem;
-    text-align: center;
+  padding-top: 1rem;
+  text-align: center;
 }
-
 .item-marketing p {
-    padding: 0 4rem;
+  padding: 0 4rem;
 }
 
 .button {
-    color: #e8d9fa;
-    background-color: #7F38DE;
+  color: #e8d9fa;
+  background-color: #7F38DE;
 }
 
 .index-info {
-    grid-area: info;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    border-top: 1px solid gray;
-    padding-top: 1rem;
-}    
-
-.info-item i{
-    font-size: 2.5rem;
-    padding: 3rem 0;
+  grid-area: info;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-top: 1px solid gray;
+  padding-top: 1rem;
 }
 
+.info-item i {
+  font-size: 2.5rem;
+  padding: 3rem 0;
+}
 .info-item p {
-    font-family: time_burner_bold;
-    font-size: 1.1rem;
+  font-family: time_burner_bold;
+  font-size: 1.1rem;
 }
 
 .productos-container {
-    display: grid;
-    grid-template:
-        "header"4.5rem "image" 6rem "texto" 14rem "main" 185rem "footer"auto;
+  display: grid;
+  grid-template: "header" 4.5rem "image" 6rem "texto" 14rem "main" 185rem "footer" auto;
 }
 
-.banner-image{
-    grid-area: image;
+.banner-image {
+  grid-area: image;
 }
-
 .banner-image img {
-    width: 100%;
-    padding-top: 3rem;
+  width: 100%;
+  padding-top: 3rem;
 }
 
 .banner-texto {
-    grid-area: texto;
-    width: 100%;
-    height: 16rem;
-    background-color: #7F38DE;
+  grid-area: texto;
+  width: 100%;
+  height: 16rem;
+  background-color: #7F38DE;
 }
-
 .banner-texto h1 {
-    color: #e8d9fa;
-    font-family: pnova-regular;
-    font-size: 2rem;
-    text-align: center;
-    padding: 2.3rem 0 0 0;
+  color: #e8d9fa;
+  font-family: pnova-regular;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2.3rem 0 0 0;
 }
-
 .banner-texto p {
-    color: #e8d9fa;
-    font-family: slthin;
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 0 4rem;
+  color: #e8d9fa;
+  font-family: slthin;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0 4rem;
 }
 
 .productos-main {
-    grid-area: main;
+  grid-area: main;
 }
 
 .productos-txt h2 {
-    color: #000;
-    font-family: slthin;
-    font-size: 2rem;
-    padding: 3rem 0 1rem 0;
-    text-align: center;
+  color: #000;
+  font-family: slthin;
+  font-size: 2rem;
+  padding: 3rem 0 1rem 0;
+  text-align: center;
 }
-
 .productos-txt p {
-    color: #000;
-    font-family: slthin;
-    font-size: 1.1rem;
-    text-align: justify;
-    padding: 0 4rem;
+  color: #000;
+  font-family: slthin;
+  font-size: 1.1rem;
+  text-align: justify;
+  padding: 0 4rem;
 }
 
 .img-top img {
-    width: 80%;
-    padding: 1rem 8rem;
+  width: 80%;
+  padding: 1rem 8rem;
 }
 
 .img-pie {
-    display:flex;
-    justify-content: space-evenly;
-    padding: 1rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 0;
 }
-
 .img-pie img {
-    width: 30%;
-    padding: 1rem 0 0;
+  width: 30%;
+  padding: 1rem 0 0;
 }
 
 .menu-fixed .btn {
-    background-color: #7F38DE;
+  background-color: #7F38DE;
 }
 
 .anillos {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .aros {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .dijes {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.amuletos {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
 .galeria-titulo {
-    margin-top: 5rem;
-    transition: all .5s ease-in;
+  margin-top: 5rem;
+  transition: all 0.5s ease-in;
 }
 
 .card {
-    border: .1px solid rgb(218, 211, 211);
-    transition: all .5s ease-in-out;
+  border: 0.1px solid rgb(218, 211, 211);
+  transition: all 0.5s ease-in-out;
 }
-
 .card img {
-    padding: .7rem;
-    border-radius: 1rem;
-    transition: all .5s ease-in-out;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
 }
 
 .card-body .btn {
-    background-color: #7F38DE;
+  background-color: #7F38DE;
 }
 
 .card:hover, .menu-fixed .btn:hover {
-    transform: scale(1.05);
-    border: 1px solid black;
-} 
+  transform: scale(1.05);
+  border: 1px solid black;
+}
 
 .nosotras-container {
-    display: grid;
-    grid-template:
-        "header"4.5rem  "nosotras" 40rem "taller" 40rem  "feria1" 40rem  "feria2" 35rem "footer"auto;
+  display: grid;
+  grid-template: "header" 4.5rem "nosotras" 40rem "taller" 40rem "feria1" 40rem "feria2" 40rem "footer" auto;
 }
 
 .nosotras-main {
-    grid-area: nosotras;
-    margin-top: 1rem;
+  grid-area: nosotras;
+  margin-top: 1rem;
 }
 
 .nosotras h2 {
-    color: #432F61;
-    font-family: slthin;
-    font-size: 2rem;
-    text-align: center;
+  color: #432F61;
+  font-family: slthin;
+  font-size: 2rem;
+  text-align: center;
 }
-
 .nosotras p {
-    color: #000;
-    font-family: slthin;
-    font-size: 1.2rem;
-    text-align: justify;
-    padding: 0 4rem;
+  color: #000;
+  font-family: slthin;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 0 4rem;
 }
 
 .nosotras-img img {
-    width: 100%;
-    padding: 2rem 4rem;
+  width: 100%;
+  padding: 2rem 4rem;
 }
 
 .taller {
-    grid-area: taller;
+  grid-area: taller;
 }
 
 .feria1 {
-    grid-area: feria1;
+  grid-area: feria1;
 }
 
 .feria2 {
-    grid-area: feria2;
+  grid-area: feria2;
 }
 
 .contacto-container {
-    display: grid;
-    grid-template: 
-    "header" 4.5rem "contacto" 38rem "footer" auto;
+  display: grid;
+  grid-template: "header" 4.5rem "contacto" 38rem "footer" auto;
 }
 
 .form-contact {
-    grid-area: contacto;
-    margin-top: 3rem;
+  grid-area: contacto;
+  margin-top: 3rem;
 }
-
 .form-contact h2 {
-    text-align: center;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.send-button .btn{
-    background-color: #7F38DE;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+.send-button .btn {
+  background-color: #7F38DE;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 @media (min-width: 62rem) {
-    
-    #header {
-        height: 4.5rem;
-        z-index: 2;
-    }
-
-    .navbar-toggler {
-        display: none;
-    }
-
-    .navbar-nav {
-        display: flex;
-        justify-content: flex-end;
-        height: 4.5rem;
-        background-color: transparent;
-        overflow-y: hidden;
-        padding: .5rem 6rem 0 6rem;
-    }
-    
-    .nav-item a {
-        color: #7F38DE;
-        margin: 0 1rem;
-    }
-
-    .logo-container {
-        height: 4.5rem;
-        padding: .5rem 0 0 6rem;
-    }
-
-    .logo-container img {
-        width: 100%;
-    }
-
-    .logo-container p {
-        font-size: .9rem;
-        text-align: center;
-        padding-left: .2rem;
-    }
-
-    .index-container {
-        display: grid;
-        grid-template:
-            "header"4.5rem "carrusel"35rem "marketing"25rem "info" 24rem "footer"auto;   
-    }
-
-    .carousel {
-        padding-top: 0;
-    }
-    
-    .btn-carr {
-        margin-top: 0;
-    }
-
-    .container-marketing {
-        display: flex;
-       
-    }
-    
-    .item-marketing {
-        width: 100%;
-        padding: 4rem 0;
-    }
-
-    .item-marketing img {
-        width: 140px;
-        height: 140px;
-    }
-
-    .index-info {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
-    .productos-container {
+  #header {
+    height: 4.5rem;
+    z-index: 2;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 4.5rem;
+    background-color: transparent;
+    overflow-y: hidden;
+    padding: 0.5rem 6rem 0 6rem;
+  }
+  .nav-item a {
+    color: #7F38DE;
+    margin: 0 1rem;
+  }
+  .logo-container {
+    height: 4.5rem;
+    padding: 0.5rem 0 0 6rem;
+  }
+  .logo-container img {
+    width: 100%;
+  }
+  .logo-container p {
+    font-size: 0.9rem;
+    text-align: center;
+    padding-left: 0.2rem;
+  }
+  .index-container {
     display: grid;
-    grid-template:
-        "header"4.5rem "image" 21rem "texto" 17rem "main" 173rem "footer"auto;
-    }   
-
-    .banner-texto {
-        height: 16rem;
-    }
-
-    .productos-main {
-       margin: 0 16rem;
-    }
-
-    .galeria-main {
-        margin: 0 12rem;
-    }
-
-    .nosotras-container {
-        display: grid;
-        grid-template:
-            "header"4.5rem  "nosotras" 41rem "taller" 41rem  "feria1" 41rem  "feria2" 25rem "footer"auto;
-    }
-
-    .nosotras-main {
-        margin: 2rem 15rem;
-    }
-
-    .nosotras h2 {
-        margin-top: 2rem;
-    }
-
-    .feria1 p, .feria2 p {
-        text-align: center;
-        margin-top: .5rem;
-    }
-
-    .nosotras-img img {
-        width: 50%;
-        margin-left: 15rem ;
-    }
- 
+    grid-template: "header" 4.5rem "carrusel" 35rem "marketing" 25rem "info" 15rem "footer" auto;
+  }
+  .carousel {
+    padding-top: 0;
+  }
+  .btn-carr {
+    margin-top: 0;
+  }
+  .container-marketing {
+    display: flex;
+  }
+  .item-marketing {
+    width: 100%;
+    padding: 4rem 0;
+  }
+  .item-marketing img {
+    width: 140px;
+    height: 140px;
+  }
+  .index-info {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .productos-container {
+    display: grid;
+    grid-template: "header" 4.5rem "image" 21rem "texto" 17rem "main" 173rem "footer" auto;
+  }
+  .banner-texto {
+    height: 16rem;
+  }
+  .productos-main {
+    margin: 0 16rem;
+  }
+  .galeria-main {
+    margin: 0 12rem;
+  }
+  .nosotras-container {
+    display: grid;
+    grid-template: "header" 4.5rem "nosotras" 41rem "taller" 41rem "feria1" 41rem "feria2" 40rem "footer" auto;
+  }
+  .nosotras-main {
+    margin: 2rem 15rem;
+  }
+  .nosotras h2 {
+    margin-top: 2rem;
+  }
+  .feria1 p, .feria2 p {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  .nosotras-img img {
+    width: 50%;
+    margin-left: 15rem;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

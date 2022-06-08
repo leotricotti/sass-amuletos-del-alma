@@ -1,0 +1,38 @@
+.nosotras-container {
+	display: grid;
+	grid-template: "header"4.5rem  "nosotras" 40rem "taller" 40rem  "feria1" 40rem  "feria2" 40rem "footer"auto;
+}
+.nosotras-main {
+	grid-area: nosotras;
+	margin-top: 1rem;
+}
+.nosotras {
+	h2 {
+		color: #432F61;
+		font-family: slthin;
+		font-size: 2rem;
+		text-align: center;
+	}
+	p {
+		color: #000;
+		font-family: slthin;
+		font-size: 1.2rem;
+		text-align: justify;
+		padding: 0 4rem;
+	}
+}
+.nosotras-img {
+	img {
+		width: 100%;
+		padding: 2rem 4rem;
+	}
+}
+.taller {
+	grid-area: taller;
+}
+.feria1 {
+	grid-area: feria1;
+}
+.feria2 {
+	grid-area: feria2;
+}

@@ -1,0 +1,166 @@
+@font-face {
+    font-family: time_burner_bold;
+    src: url(../fonts/timeburnerbold.ttf);
+}
+
+@font-face {
+    font-family: slthin;
+    src: url(../fonts/SlatePro-Light.ttf);
+}
+
+@font-face {
+    font-family: time_burner_nav;
+    src: url(../fonts/timeburner_regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: rgb(232, 217, 250);
+    background: linear-gradient(180deg, rgb(240, 231, 252) 60%, rgba(181, 184, 254, 1) 100%);
+    background-attachment: fixed;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@import "../scss/components/header";
+@import "../scss/components/footer";
+@import "../scss/components/index";
+@import "../scss/components/productos";
+@import "../scss/components/galeria";
+@import "../scss/components/nosotras";
+@import "../scss/components/contacto";
+
+
+@media (min-width: 62rem) {
+    
+    #header {
+        height: 4.5rem;
+        z-index: 2;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: flex-end;
+        height: 4.5rem;
+        background-color: transparent;
+        overflow-y: hidden;
+        padding: .5rem 6rem 0 6rem;
+    }
+    
+    .nav-item a {
+        color: #7F38DE;
+        margin: 0 1rem;
+    }
+
+    .logo-container {
+        height: 4.5rem;
+        padding: .5rem 0 0 6rem;
+    }
+
+    .logo-container img {
+        width: 100%;
+    }
+
+    .logo-container p {
+        font-size: .9rem;
+        text-align: center;
+        padding-left: .2rem;
+    }
+
+    .index-container {
+        display: grid;
+        grid-template:
+            "header"4.5rem "carrusel"35rem "marketing"25rem "info" 15rem "footer"auto;   
+    }
+
+    .carousel {
+        padding-top: 0;
+    }
+    
+    .btn-carr {
+        margin-top: 0;
+    }
+
+    .container-marketing {
+        display: flex;
+       
+    }
+    
+    .item-marketing {
+        width: 100%;
+        padding: 4rem 0;
+    }
+
+    .item-marketing img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .index-info {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .productos-container {
+    display: grid;
+    grid-template:
+        "header"4.5rem "image" 21rem "texto" 17rem "main" 173rem "footer"auto;
+    }   
+
+    .banner-texto {
+        height: 16rem;
+    }
+
+    .productos-main {
+       margin: 0 16rem;
+    }
+
+    .galeria-main {
+        margin: 0 12rem;
+    }
+
+    .nosotras-container {
+        display: grid;
+        grid-template:
+            "header"4.5rem  "nosotras" 41rem "taller" 41rem  "feria1" 41rem  "feria2" 40rem "footer"auto;
+    }
+
+    .nosotras-main {
+        margin: 2rem 15rem;
+    }
+
+    .nosotras h2 {
+        margin-top: 2rem;
+    }
+
+    .feria1 p, .feria2 p {
+        text-align: center;
+        margin-top: .5rem;
+    }
+
+    .nosotras-img img {
+        width: 50%;
+        margin-left: 15rem ;
+    }
+ 
+}

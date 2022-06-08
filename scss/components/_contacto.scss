@@ -1,0 +1,19 @@
+.contacto-container {
+	display: grid;
+	grid-template: "header" 4.5rem "contacto" 38rem "footer" auto;
+}
+.form-contact {
+	grid-area: contacto;
+	margin-top: 3rem;
+	h2 {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+}
+.send-button {
+	.btn {
+		background-color: #7F38DE;
+		margin-top: 2rem;
+		margin-bottom: 5rem;
+	}
+}

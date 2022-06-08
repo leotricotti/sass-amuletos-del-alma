@@ -1,0 +1,22 @@
+.galeria-titulo {
+	margin-top: 5rem;
+	transition: all .5s ease-in;
+}
+.card {
+	border: .1px solid rgb(218, 211, 211);
+	transition: all .5s ease-in-out;
+	img {
+		padding: .7rem;
+		border-radius: 1rem;
+		transition: all .5s ease-in-out;
+	}
+}
+.card-body {
+	.btn {
+		background-color: #7F38DE;
+	}
+}
+.card:hover, .menu-fixed .btn:hover {
+	transform: scale(1.05);
+	border: 1px solid black;
+}
